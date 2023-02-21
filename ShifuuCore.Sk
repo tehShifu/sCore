@@ -1,0 +1,2185 @@
+#=================================================================#
+# 		 ____  _     _  __              		  ____               		#
+# 		/ ___|| |__ (_)/ _|_   _ _   _   		/ ___|___  _ __ ___ 		#
+# 		\___ \| '_ \| | |_| | | | | | | 		| |   / _ \| '__/ _ \		#
+# 		 ___) | | | | |  _| |_| | |_| | 		| |__| (_) | | |  __/		#
+# 		|____/|_| |_|_|_|  \__,_|\__,_| 		 \____\___/|_|  \___|		#
+#=================================================================#
+#       			   Thank you for downloading <3           					#
+#       			  Made with love by Shifuu#6900               			#
+#  Credits: VirtusMC (StaffMode, /report , /speed from qModSuite) #
+#                                            											#
+#  				  If you find any issues, Please do dm me!  						#
+#											 							    													#
+#   			   DISCLAIMER: Feel free to take code from  						#
+#   			  this but credit would be appreaciated :D 							#
+#=================================================================#
+#=================================================================#
+# 						 _____             __ _       											#
+#		 				/ ____|           / _(_)      												#
+#						| |     ___  _ __ | |_ _  __ _ 												#
+#						| |    / _ \| '_ \|  _| |/ _` |												#
+#						| |___| (_) | | | | | | | (_| |												#
+#						 \_____\___/|_| |_|_| |_|\__, |												#
+#		    				                      __/ |												#
+#		        				                 |___/ 												#
+#=================================================================#
+
+options:
+	
+#====================================================# 
+#			  ______         _                       			 #
+#			 |  ____|       | |                      			 #
+#			 | |__ ___  __ _| |_ _   _ _ __ ___  ___ 			 #
+#			 |  __/ _ \/ _` | __| | | | '__/ _ \/ __|			 #
+#			 | | |  __/ (_| | |_| |_| | | |  __/\__ \			 #
+#			 |_|  \___|\__,_|\__|\__,_|_|  \___||___/			 #
+#                                         					 #
+#                true = enabled											 #
+#								 false = disabled										 #
+#====================================================#
+
+#=====================(General Settings)===================#
+	
+	# Sends links & welcomes user on join #
+	OnJoinWelcome: true
+
+	#==================(RankManager Settings)================#
+
+	# Permissions Plugin! #
+	# Supported: (LUCKPERMS) #
+
+	RankPlugin: pex
+
+	# sends alert on successful use of RankManager
+	RankManagerAlerts: true
+
+	#==================(Report Syst Settings)================#
+
+	# Cooldown for reports (in seconds)
+	ReportCooldown: 120
+
+	# Logging Reports. (view with /reports)
+	LogReports: true
+
+	#==================(Maintenance Settings)================#
+
+	# Replace vanilla whitelist with Core's maintenance system.
+	ReplaceWhitelistWithMaintenance: true
+
+	# sends alert on successful use of /maintenance
+	MaintenanceAlerts: true
+
+	#=====================(Freeze Manager)===================#
+
+ # Freeze Manager Settings
+
+ # autoban player if they leave while frozen
+	BanOnQuitWhilstFrozen: true
+
+ # Command to be used when player logs
+	FrozenQuitBanCmd: /ban %player% Logged whilst frozen!
+
+ 
+ #=========================================================#
+ #                    ALERTS Settings                      #
+ #=========================================================#
+
+ # sends alert on successful use of /echant 
+	EnchantAlert: true
+
+ # sends alert on successful use of /heal
+	HealAlert: true
+
+ # sends alert on successful use of /kill
+	KillAlert: true
+
+ # sends alert on successful use of /invsee
+	InvSeeAlert: true
+
+ # sends alert on successful use of /feed
+	FeedAlert: true
+
+ # sends alert on successful use of /timeout
+	TimeOutAlert: true
+
+ # sends alert on successful use of /sudo
+	SudoAlert: true
+
+ # sends alert on successful use of /tp 
+	TpAlerts: true
+
+
+
+#=====================================================#	
+#		  __  __                                     			#
+#		 |  \/  |                                    			#
+#		 | \  / | ___  ___ ___  __ _  __ _  ___  ___ 			#
+#		 | |\/| |/ _ \/ __/ __|/ _` |/ _` |/ _ \/ __|			#
+#		 | |  | |  __/\__ \__ \ (_| | (_| |  __/\__ \			#
+#		 |_|  |_|\___||___/___/\__,_|\__, |\___||___/			#
+#		                              __/ |          			#
+#		                             |___/           			#
+#																											#
+#       Almost all messages are configurable :D       #
+#=====================================================#	
+
+	#====================(Core Prefix)==================#
+
+	# main prefix #
+	prefix: &8[&bCore&8]
+
+	# console prefix (used in some messages)  #
+	console: &4&lCONSOLE
+
+	# Staff messages #
+	staffalert: &9[Staff]
+ 
+	# Admin messages #
+	adminalert: &c[Admin]
+
+	#====================(General Msgs)==================#
+
+	# message sent to player if they do not have Permission for certain commands
+	NoPermission: &cYou do not have Permission!
+
+	# Custom join messages, this replaces vanilla join message!
+	JoinMessage: &3%player% &7Joined the server!
+
+	# Chatbar used in messages as a separator #
+	ChatBar: &8&m-----&3&m------------------------------&8&m-----
+	
+	SentToSpawn: &bYou have been sent to spawn!
+
+	# Player not found
+	PlayerNotFound: &cPlayer not found! 
+
+	#====================(Join Messages)==================#
+	
+	# Welcome header 
+	WelcomeMessage: &3Welcome to {@ServerName}
+
+	# Your website
+	website: &9✦ &3&oWebsite: &bhttps://Shifuu.gg
+
+	# Your store
+	store: &9✦ &3&oStore: &bhttps://store.shifuu.gg
+
+	# Discord link
+	discord: &9✦ &3&oDiscord: &bhttps://discord.shifuu.gg
+
+	#====================(Staff Messages)==================#
+
+	# Sends notification to online staff when another staff member joins!
+	StaffJoinMessage: &3[S] &b%player% &3connected to &bServer
+
+	# Sends notification to online staff when another staff member quits!
+	StaffQuitMessage: &3[S] &b%player% &cdisconnected &3from &bServer
+
+	# StaffChat Prefix
+	StaffChatPrefix: &b[SC] &3[Server]
+
+	# Format for staff chat. if you want, you can use %player's prefix% %player%
+	StaffChatFormat: &b%player's display name%&7
+
+	# The colour for messages in staff chat
+	StaffChatMessageColour: &b
+
+	#====================(Vanish Messages)==================#
+
+	VanishEnabled: &bYou have &aEnabled &bvanish 
+	VanishDisabled: &bYou have &cdisabled &bvanish
+
+	#====================(Gamemode Messages)==================#
+
+	# Sent to player on gamemode change
+	GamemodeChange: &bYour Gamemode has been updated to %arg-1%!
+
+	# Alert messages 
+	GamemodeChangeSelf: &3%player% set their gamemode to %arg-1%
+	GamemodeChangeOthers: &3%player% set gamemode of &e%arg-2% &bto %arg-1%
+
+	#====================(Teleport Messages)==================#
+		
+	# Sent on successful teleport of player 
+	TpSuccess: &bSuccessfully teleported to %arg-1%
+
+	# Sent on confirmed tpall
+	TpAllSuccess: &bSuccessfully teleported everyone!
+
+	# Alert messages
+	TpAlert: &3%player% &bteleported to &e%arg-1%
+	TpAllAlert: &3%player% &bteleported everyone
+
+	#====================(Kill Messages)==================#
+
+	# Sent on successful use of /kill 
+	KillSuccess: &bYou have killed &e%arg-1%
+
+	# alert message 
+	KillAlertMessage: &b%player% &bhas killed %arg-1%
+
+		#====================(Fly Messages)==================#
+
+	# Fly enable message
+	FlyEnabled: &bFly mode &a&oenabled.
+
+	# Fly disable messaged
+	FlyDisabled: &bFly mode &c&odisabled.
+
+	# alert messages 
+	FlyOtherEnabled: &3%player% &aenabled &bFly mode for &e%arg-1%.		
+	FlyOtherDisabled: &3%player% &cdisabled &bFly mode for &e%arg-1%.
+
+	#====================(Heal Messages)==================#
+
+	# Sent on healing themselves #
+	HealSelf: &bYou have been healed &c❤
+
+	# Sent on healing another player
+	HealSuccess: &e%arg-1% &bHas been succesfully healed &c❤
+
+	# Alert messages 
+	HealSelfAlert: &3%player% &bhas healed themselves &c❤
+	HealOtherAlert: &3%player% &bhas healed &e%arg-1% &c❤
+
+	#====================(Feed Messages)==================#
+
+	# Sent on feeding themselves #
+	FeedSelf: &bYou have been Fed &c🍗
+
+		# Sent on feed another player 
+	FeedSuccess: &e%arg-1% &bHas been succesfully Fed &c🍔
+
+	# alert messages
+	FeedSelfAlert: &3%player% &bhas Fed themselves &c🍔
+	FeedOtherAlert: &3%player% &bhas Fed &e%arg-1% &c🍔
+
+	#====================(Invsee Messages)==================#
+	# /speed messages 
+	FlySpeed: &bFly Speed set to &3%arg-2%
+	WalkSpeed: &bWalk Speed set to &3%arg-2%
+
+	#====================(Invsee Messages)==================#
+
+
+	# Sent on use of /invsee 
+	OpeningInv: &bOpening inventory of &e%arg 1%
+
+	# alert message 
+	InvSeeAlertMessage: &3%player% &bis now viewing inventory of &e%arg-1%
+
+
+	#====================(Feed Messages)==================#
+	# enchant alert 
+	EnchantAlertMsg: &3%player% &benchanted their item with &e%arg-1%
+
+	#====================(Rank Manager)==================#
+	# All of these are alert messages. 
+
+	# alert on creation of a rank through shifuu's rank manager 
+	RankCreated: &b%player% created &e%arg-2% &brank!
+
+	# alert on deletion of a rank through shifuu's rank manager 
+	RankDeleted: &b%player% deleted &c%arg-2% &brank!
+
+	# rename/new alias for a rank name 
+	RankRename: &b%player% renamed rank &c%arg-2% &bto &a%arg-3%
+
+	# Alert on new rank prefix 
+	RankSetPrefix: &b%player% set prefix of %arg-2% &bto %arg-3%
+
+	# Alert on new rank suffix 	
+	RankSetSuffix: &b%player% set suffix of %arg-2% &bto %arg-3%
+
+	# Alert on rank grant to player 
+	LP-GrantMessage: &c%player% &bgranted %arg-3% to &3%arg-2%!
+	PEX-GrantMessage: &3%player% &bgranted rank '&f%arg-3%' &bto &3%arg-2%!
+	RankRemove: &3%player% &cremoved rank '&f%arg-3%' &cfrom &f%arg-2%!
+
+	#====================(FakeOP Messages)==================#
+
+	# Fake OP Messagaes  - Alerts sent to core.admin if enabled #
+
+	# FakeOP run by player 
+	PlayerFakeOP: %player% &bfake-opped &e%arg-1%
+
+	# FakeOP run by Console 
+	ConsoleFakeOP: &4&lCONSOLE &bfake-opped &e%arg-1%
+
+	# FakeDEOP run by player 
+	PlayerFakeDEOP: %player% &bfake-deopped &e%arg-1%
+
+	# FakeDEOP run by console
+	ConsoleFakeDEOP: &4&lCONSOLE &bfake-deopped &e%arg-1%
+
+	#====================(Timeout Messages)==================#
+
+	# TimeOut Kick #
+	TimeOutAlertMessage: &c%player% &btime out kicked &e%arg-1%
+
+	#====================(Sudo Messages)==================#
+
+	#  Sudo Success  #
+	SudoSuccess: &bSuccessfully Sudo-ed %arg-1%
+	SudoAlertMessage: &3%player% &bSudo'ed &e%arg-1%
+
+	#====================(Report Messages)==================#
+
+	# Sent on successful report 
+	ReportReceived: &bYour report has been sent to all online staff!
+
+	# Sent to staff (I don't recommend you change anything other than colours)
+	# {report.count.%arg-1%} Is the count of how many times a player has been reported
+	# Its quite useful
+	ReportLine1: &9[Report] &b%arg-1% &7[%{report.count.%arg-1%}%] &7reported by &b%player%
+	ReportLine2: &9Reason: &7%arg-2%
+
+	#====================(Chat Manager)==================#
+
+	# Message sent to player when chat is currently muted 
+	ChatMuted: &bChat is currently muted.
+
+	#====================(Maintenance Messages)==================#
+
+	#  Sent on maintenance enable 
+	MaintenanceEnabled: &3❄ &b&lMaintenance &3❄ &8\\ &b%player% &aEnabled Maintenance Mode
+		
+	# Sent on mainenance disable 
+	MaintenanceDisabled: &3❄ &b&lMaintenance &3❄ &8\\ &b%player% &cDisabled Maintenance Mode
+		
+	# Reason to kick player during maintenance 
+	MaintenanceKickMessage: &3❄ &b&lMaintenance &3❄ &8\\ &b&lServer is Currently Under Maintenance. 
+		
+	# Sent on adding player to bypass
+	MaintenanceBypassAdd: &3❄ &b&lMaintenance &3❄ &8\\ &3%arg-2% &bwill now bypass Maintenance
+		
+	# Sent on revoking player's bypass
+	MaintenanceBypassRemove: &3❄ &b&lMaintenance &3❄ &8\\ &3%arg-2% &bwill no longer bypass Maintenance
+		
+	# Join message during maintenance 
+	BypassingMessage: &3❄ &b&lMaintenance &3❄ &8\\ &3%arg-2% &bYou are currently bypassing maintenance!
+		
+	# Join attempt message
+	MaintenanceJoinAttempt: &3❄ &b&lMaintenance &3❄ &8\\ &3%player% &btried to join but maintenance is currently &aEnabled
+		
+	#====================(Maintenance Messages)==================#
+
+	# Reboot Lines 
+	rebootline1: &3⚠ &b&lServer will Reboot in 30 seconds! &3⚠ 
+	rebootline2: &3⚠ &b&lServer will Reboot in 15 seconds! &3⚠ 
+	rebootline3: &3⚠ &b&lServer will Reboot in 10 seconds! &3⚠ 
+	rebootline4: &3⚠ &b&lServer will Reboot in 5 seconds! &3⚠
+
+	# Reason to kick player on end of countdown
+	rebootKick: &3⚠ &bServer Reboot&8, &bWe'll be right back folks! &3⚠
+
+	# Reboot cancel broadcast
+	rebootCancel: &3⚠ &bServer Reboot Cancelled by &9%player% &3⚠
+
+	#====================(Freeze Messages)==================#
+
+	# Freeze success sent to executor 
+	FreezeSuccess: &bYou have frozen &3%arg-1% 
+
+	# Unfreeze message sent to player 
+	NoLongerFrozen: &bYou are no longer frozen!
+
+	# Freeze alerts 
+	FreezeAlert: &3%arg-1% &bhas been frozen by &b%player% 
+	UnfreezeAlert: &3%arg-1% &bis no longer frozen
+
+	# Message sent to staff when player logs out while frozen 
+	LoggedWhilstFrozen: &4&l%player% Logged out whilst frozen!
+
+	# AutoBan message
+	FrozenAutoBanMessage: &4&lCONSOLE &bbanned %player% for 'Logged whilst frozen!'
+
+	# Repeated  to frozen player! (looks bad in config but looks neat ingame)
+	FrozenLine1: &f■■■■&c■&f■■■■
+	FrozenLine2: &f■■■&c■&6■&c■&f■■■ &4&lDo NOT log out!
+	FrozenLine3: &f■■&c■&6■&0■&6■&c■&f■■ &cIf you do, you will be banned!
+	FrozenLine4: &f■■&c■&6■&0■&6■&c■&f■■ &ePlease join our discord!
+	FrozenLine5: &f■&c■&6■■&0■&6■■&c■&f■ &ediscord.gg/yourserver
+	FrozenLine6: &f■&c■&6■■&0■&6■■&c■&f■
+	FrozenLine7: &c■&6■■■&0■&6■■■&c■
+	FrozenLine8: &c■■■■■■■■■
+
+
+	#====================(ModMode Messages)==================#
+
+	ModeModeEnabled: &bYou have &aenabled &bModMode
+	ModeModeEnabledAlert: &3%player% &bhas &aenabled &btheir ModMode
+	ModeModeDisabledAlert: &3%player% &bhas &cdisabled &btheir ModMode 
+	ModeModeDenyBlockBreak: &bYou are not allowed to break blocks while in Mod Mode!
+	ModeModeDenyBuild: &bYou are not allowed to build while in Mod Mode! 
+
+
+#=================================================================#
+# 		 _____                    _         _                 			#
+# 		|  __ \                  (_)       (_)                			#
+# 		| |__) |__ _ __ _ __ ___  _ ___ ___ _  ___  _ __  ___ 			#
+# 		|  ___/ _ \ '__| '_ ` _ \| / __/ __| |/ _ \| '_ \/ __|			#
+# 		| |  |  __/ |  | | | | | | \__ \__ \ | (_) | | | \__ \			#
+# 		|_|   \___|_|  |_| |_| |_|_|___/___/_|\___/|_| |_|___/			#
+#                                                       					#
+#=================================================================# 
+
+#====================(Staff Permissions)==================#
+	# main staff permission
+	CoreStaff: core.staff  
+
+	# admin permission
+	CoreAdmin: core.admin
+
+	# permission to see staffchat 
+	StaffchatSee: core.staffchat.see
+
+	# permission to use stacchat 
+	StaffchatUse: core.staffchat.use
+
+	# permission to freeze a player using /freeze
+	FreezePerm:core.command.freeze
+
+	# permission to see inventory of a player 
+	InvSeePerm: core.command.invsee
+
+	# permission to vanish 
+	VanishPerm: core.command.vanish
+
+	# permission to use mod mode (requires invsee & vanish permission)
+	ModModePerm: core.command.mod
+
+#====================(Chat Permissions)==================#
+		
+	# permission to bypass muted chat 
+	ChatManager: core.command.chat
+	ChatMuteBypass: core.mutechat.bypass
+
+#====================(Troll Permissions)==================#
+	
+	# fakeop & fakedeop permission
+	FakeDeopPerm: core.command.fakedeop
+	FakeOPPerm: core.command.fakeop
+
+	# /sudo permission
+	SudoPerm: core.command.sudo
+
+	# kick player for timed out 
+	TimeOutPerm: core.command.timeout
+
+#====================(Essentials Permissions)==================#
+	
+	# gamemode permissions
+	GamemodeCreative: core.command.gamemode.creative 
+	GamemodeSurvival: core.command.gamemode.survival
+	GamemodeAdventure: core.command.gamemode.adventure
+	GamemodeSpectator: core.command.gamemode.spectator
+
+	# /heal
+	HealPerm: core.command.heal
+	HealOtherPerm: core.command.heal.other
+
+	# /feed 
+	FeedPerm: core.command.feed
+	FeedOtherPerm: core.command.feed.other
+
+	# /Fly
+	FlyPerm: core.command.fly 
+	FlyOtherPerm: core.command.fly.other
+
+	# /kill
+	KillPerm: core.command.kill
+
+	# /enchat 
+	EnchantPerm: core.command.enchant
+
+	# teleport perms
+	TeleportPerm: core.command.teleport
+	TpAllPerm: core.command.tpall
+	TpherePerm: core.command.tphere
+	BackPerm: core.command.back
+
+	# permission to use /speed
+	SpeedPerm: core.command.speed
+
+
+#====================(System Permissions)==================#
+	
+	# permission to manage maintenance
+	MaintenancePerm: core.maintenance
+
+	# permission to start & cancel reboot 
+	RebootPerm: core.command.reboot
+
+	# permission to use /speed
+	SpeedPerm: core.command.speed
+
+
+
+#===========================================================================#
+#																																						#	
+#											  ______ _   _ _____  																#
+#	 											|  ____| \ | |  __ \ 																#
+# 											| |__  |  \| | |  | |																#
+# 											|  __| | . ` | |  | |																#
+# 											| |____| |\  | |__| |																#
+# 											|______|_| \_|_____/ 																#
+# 																																					#
+#===========================================================================#
+
+
+						#==================================================#
+						#																									 #
+						#   		   REST OF CODE IS DOWN BELOW              #
+						#																									 #
+						#==================================================#
+
+
+
+
+						#==================================================#
+						#																									 #
+						#   DO NOT EDIT UNLESS YOU KNOW WHAT YOU'RE DOING  #
+						#																									 #
+						#==================================================#
+
+
+
+
+						#==================================================#
+						#																									 #
+						#   		   REST OF CODE IS DOWN BELOW              #
+						#																									 #
+						#==================================================#
+
+
+
+
+						#==================================================#
+						#																									 #
+						#   DO NOT EDIT UNLESS YOU KNOW WHAT YOU'RE DOING  #
+						#																									 #
+						#==================================================#
+
+#=========================================================================#
+# 	 ______     __   __   ______     __   __     ______   ______      		#
+#		/\  ___\   /\ \ / /  /\  ___\   /\ "-.\ \   /\__  _\ /\  ___\     		#
+#		\ \  __\   \ \ \'/   \ \  __\   \ \ \-.  \  \/_/\ \/ \ \___  \    		#
+#		 \ \_____\  \ \__|    \ \_____\  \ \_\\"\_\    \ \_\  \/\_____\   		#
+#		  \/_____/   \/_/      \/_____/   \/_/ \/_/     \/_/   \/_____/   		#
+#                                                                         #
+#=========================================================================#
+
+on load:
+	send "{@prefix} &aCore successfully loaded" to console
+	send "{@prefix} &aUsing rank plugin: {@RankPlugin} &7&o(may change in config)"
+	send "{@staffalert} &9Staff modules Loaded"
+	loop all players:
+		if loop-player has permission "{@CoreAdmin}":
+			send "{@prefix} &aCore successfully Enabled" to loop-player
+			send "{@prefix} &aUsing rank plugin: &e{@RankPlugin} &7&o(may change in config)" to loop-player
+on unload:
+	send "" to console
+	send "{@prefix} &cCore has been disabled, Goodbye!" to console
+	loop all players:
+		if loop-player has permission "{@CoreAdmin}":
+			send "{@prefix} &cCore has been disabled." to loop-player
+
+on join:
+	if {ServerSpawn} is set: 
+		teleport player to {ServerSpawn}
+	else:
+		broadcast "{@prefix} &bServer spawn has not been set! if you are a server administrator, please set spawn using &3/setspawn!"	
+	if {maintenance.status} is true:
+		if {maintenance.bypass.%player%} is true:
+			set join message to "{@JoinMessage}"
+			loop all players:
+				if loop-player has permission "{@CoreStaff}":
+					send "{@StaffJoinMessage}" to loop-player
+					send "{@StaffJoinMessage}" to console	
+					stop
+		else:
+			# waiting 4 ticks bc Vanilla tablist can bug & not register player leaving
+			set join message to ""
+			wait 3 ticks	
+			kick player due to "{@MaintenanceKickMessage}"
+			loop all players:
+				if loop-player has permission "{@CoreAdmin}":
+					send "{@MaintenanceJoinAttempt}" to console
+					send "{@MaintenanceJoinAttempt}" to loop-player
+	else:
+		set join message to "{@JoinMessage}"
+		loop all players:
+			if player has permission "{@CoreStaff}":
+				send "{@StaffJoinMessage}" to loop-player
+				send "{@StaffJoinMessage}" to console	
+		
+on quit:
+	set quit message to ""
+	set {report.count.%player%} to 0
+	if player has permission "{@CoreStaff}":
+		loop all players:
+			if loop-player has permission "{@CoreStaff}":
+				send "{@StaffQuitMessage}" to loop-player
+				send "{@StaffQuitMessage}" to console
+	if {freeze.status.%player%} is true:
+		set {freeze.status.%player%} to false
+		if {@BanOnQuitWhilstFrozen} is true:
+			make console execute command "{@FrozenQuitBanCmd}"
+			broadcast "{@prefix} {@FrozenAutoBanMessage}"	
+		if {@BanOnQuitWhilstFrozen} is false:
+			loop all players:
+				if loop-player has permission "{@CoreStaff}":
+					send "{@prefix} {@LoggedWhilstFrozen}" to loop-player		
+on damage:
+	if {freeze.status.%victim%} is true:
+		cancel event
+
+on respawn:
+	if {ServerSpawn} is set:
+		teleport player to {ServerSpawn}
+	else:
+		send "{@prefix} &bSpawn has not been set! if you are a server administrator please set spawn using &3/setspawn"
+
+on chat:
+	if {chat.mute.status} is true:
+		if player has permission "{@ChatMuteBypass}":
+			stop
+		else:
+			cancel event
+			send "{@prefix} {@ChatMuted}"
+
+	if {staffchat.status.%player%} is true:
+		cancel event
+		loop all players:
+			if loop-player has permission "{@StaffchatSee}":
+				send "{@StaffChatPrefix} {@StaffChatFormat}: {@StaffChatMessageColour}%message%" to loop-player
+	
+	if {tpall.confirm.%player%} is false:
+		if message is "yes":
+			cancel event
+			set {tpall.confirm.%player%} to true
+			make player execute command "/tpall"
+		if message is "no":
+			cancel event
+			send "{@prefix} &bTp-all Cancelled"
+			delete {tpall.confirm.%player%}
+
+on inventory click:
+	if name of event-inventory is "&bMenu":
+		if index of event-slot = 13:
+			cancel event
+			send "{@ChatBar}"
+			send "&bShifuu Core made by &9oShifuu"
+			send "&bDiscord: Shifuu##6900"
+			send "&bVersion: &91.0"
+			send "{@ChatBar}"
+		if index of event-slot = 11:
+			cancel event
+			send ""
+			send "&9Hey!, Dm Shifuu##6900 for support. I always have my dms open but, I do not accept friend requests"	
+			send ""
+		if index of event-slot = 15:
+			cancel event
+			if player has permission "skript.admin":
+				send "{@prefix} &bReloading..."
+				make player execute command "/core reload"	
+	if name of event-inventory is "&bMaintenance Menu":
+		if index of event-slot = 11:
+			cancel event
+			set {maintenance.status} to false
+			send "{@MaintenanceDisabled}"
+		if index of event-slot = 15:
+			cancel event
+			set {maintenance.status} to true
+			send "{@MaintenanceEnabled}"
+		if index of event-slot = 13:
+			cancel event
+
+on player move:
+	if {freeze.status.%player%} is true:
+		teleport player to {freezelocation.%player%}
+
+on command:
+	if command starts with "whitelist":
+		if {@ReplaceWhitelistWithMaintenance} is true:
+			cancel event
+			make player execute command "/maintenance"
+
+# not allowing staff to get items from player's inventory
+on inventory click:
+	if {ModMode.status.%player%} is true:
+		cancel event
+
+# to prevent accidentally picking up items
+on pickup:
+	if {modmode.status.%player%} is true:
+		cancel event
+
+on break:
+	if {modmode.status.%player%} is true:
+		cancel event
+		send "{@prefix} {@ModeModeDenyBlockBreak}"
+
+on build:
+	if {modmode.status.%player%} is true:
+		cancel event
+		send "{@prefix} {@ModeModeDenyBuild}"
+
+on drop:
+	if {modmode.status.%player%} is true:
+		cancel event
+
+on right click with gray dye:
+	if name of player's tool is "&bVanish: &7disabled":
+		set {vanish.status.%player%} to false
+		hide player from all players
+		set slot 8 of player to lime dye named "&bVanish: &aenabled"
+
+on right click with lime dye:
+	if name of player's tool is "&bVanish: &aenabled":
+		set {vanish.status.%player%} to true
+		reveal player to all players
+		set slot 8 of player to gray dye named "&bVanish: &7disabled"
+
+on right click on a player with book:
+	if name of player's tool is "&bInspect Inventory":
+		cancel event
+		make player execute command "/invsee %clicked entity%"
+		stop
+
+on right click on a player with Ice:
+	if name of player's tool is "&b&lFreeze Player":
+		cancel event
+		make player execute command "/freeze %clicked entity%"
+		stop			
+			
+#=====================================================================================================#
+#																								      #																								#
+# 		______     ______     __    __     __    __     ______     __   __     _____     ______       #
+#		/\  ___\   /\  __ \   /\ "-./  \   /\ "-./  \   /\  __ \   /\ "-.\ \   /\  __-.  /\  ___\     #
+#		\ \ \____  \ \ \/\ \  \ \ \-./\ \  \ \ \-./\ \  \ \  __ \  \ \ \-.  \  \ \ \/\ \ \ \___  \    #
+#	 	\ \_____\  \ \_____\  \ \_\ \ \_\  \ \_\ \ \_\  \ \_\ \_\  \ \_\\"\_\  \ \____-  \/\_____\ 	  #
+#		  \/_____/   \/_____/   \/_/  \/_/   \/_/  \/_/   \/_/\/_/   \/_/ \/_/   \/____/   \/_____/   #
+#                                                                                            		  #
+#																									  #																							#
+#=====================================================================================================#
+
+#=============================================+(GENERAL)+=============================================#
+
+command /core [<text>]:
+	aliases: /shifuu , /servercore
+	trigger:
+		if executor is player:
+			if arg-1 is not set:
+				set {_coregui} to a new chest inventory with 3 row with name "&bMenu"
+				set slot 11 of {_coregui} to blue wool named "&9Support!" with lore "&7&oclick me"
+				set slot 13 of {_coregui} to nether star named "&b&oCurrently Running &e&oShifuu Core" with lore "&b&oversion&7: &e1.0"
+				set slot 15 of {_coregui} to red wool named "&cReload Core" 
+				open {_coregui} to player
+				stop
+			if arg-1 is "gui":
+				set {_coregui} to a new chest inventory with 3 row with name "&bMenu"
+				set slot 11 of {_coregui} to blue wool named "&9Support!" with lore "&7&oclick me"
+				set slot 13 of {_coregui} to nether star named "&b&oCurrently Running &e&oShifuu Core" with lore "&b&oversion&7: &e1.0"
+				set slot 15 of {_coregui} to red wool named "&cReload Core" 
+				open {_coregui} to player
+				stop
+			if arg-1 is "reload":
+				if player has permission "skript.admin":
+					send "{@prefix} &cReloading Core..."
+					make player execute command "/sk reload scripts"
+					stop
+				else:
+					send "{@prefix} {@NoPermission}"
+			else:
+				send "{@prefix} &bInvalid Argument"
+		else:
+			send "{@ChatBar}"
+			send "&bsCore made by &9oShifuu"
+			send "&bDiscord: Shifuu##6900"
+			send "&bVersion: &91.0"
+			send "{@ChatBar}"
+
+
+#=============================================+(Spawn Sys)+=============================================#
+
+command /setspawn:
+	permission: {@CoreAdmin}
+	permission message: {@prefix} {@NoPermission}
+	trigger:
+		set {ServerSpawn} to player's location
+		send "{@prefix} &bSuccessfully Set server spawn!"
+
+command /delspawn:
+	permission: {@CoreAdmin}
+	permission message: {@prefix} {@NoPermission}
+	trigger:
+		if {ServerSpawn} is set:
+			delete {ServerSpawn}
+			send "{@prefix} &bSuccessfully deleted Spawn!"
+		else:
+			send "{@prefix} &bSpawn has not been set!"	
+
+command /spawn [<player>]:
+	trigger:
+		if {ServerSpawn} is set:
+			if arg-1 is not set:
+				teleport player to {ServerSpawn}
+				send "{@prefix} &bSending you to spawn..."
+			if arg-1 is set:
+				teleport player-arg to {ServerSpawn}
+				send "{@prefix} &bYou have been sent to spawn!" to player-arg
+		else:
+			send "{@prefix} &bSpawn has not been set! if you are a server administrator please set spawn using &3/setspawn"
+
+#=============================================+(SOCIALS)+=============================================#
+
+command /website:
+	aliases: /web , /ws 
+	trigger:
+		send "{@website}"
+command /discord:
+	aliases: /disc
+	trigger:
+		send "{@discord}"
+command /store:
+	trigger:
+		send "{@store}"
+
+#=============================================+(ESSENTIAL)+=============================================#
+
+command /gm [<text>] [<player>]:
+	aliases: /gmode , /mode , /gamemode
+	Usage: {@prefix} &b/gm <Creative/Survival/Adventure/Spectator>
+	trigger:
+		if executor is player:
+			if arg-1 is "c" or "creative":
+				if player has permission "{@GamemodeCreative}":
+					if arg-2 is not set:
+						set the player's gamemode to creative
+						send "{@prefix} {@GamemodeChange}"
+						loop all players:
+							if loop-player has permission "{@CoreStaff}":
+								send "{@staffalert} {@GamemodeChangeSelf}" to loop-player			
+					if arg-2 is set:
+						if arg-2 is online:
+							set arg-2's gamemode to creative
+							send "{@prefix} {@GamemodeChange}" to arg-2
+							loop all players:
+								if loop-player has permission "{@CoreStaff}":
+									send "{@staffalert} {@GamemodeChangeOthers}" to loop-player
+						else:
+							send "{@prefix} {@PlayerNotFound}"
+				else:
+					send "{@prefix} {@NoPermission}"
+
+			if arg-1 is "s" or "survival":
+				if player has permission "{@GamemodeSurvival}":
+					if arg-2 is not set:
+						set the player's gamemode to survival
+						send "{@prefix} {@GamemodeChange}"
+						loop all players:
+							if loop-player has permission "{@CoreStaff}":
+								send "{@staffalert} {@GamemodeChangeSelf}" to loop-player
+					if arg-2 is set:
+						if arg-2 is online:
+							set arg-2's gamemode to survival
+							send "{@prefix} {@GamemodeChange}" to arg-2
+							loop all players:
+								if loop-player has permission "{@CoreStaff}":
+									send "{@staffalert} {@GamemodeChangeOthers}" to loop-player
+						else:
+							send "{@prefix} {@PlayerNotFound}"
+				else:
+					send "{@prefix} {@NoPermission}"
+
+			if arg-1 is "a" or "adventure":
+				if player has permission "{@GamemodeAdventure}":
+					if arg-2 is not set:
+						set the player's gamemode to adventure
+						send "{@prefix} {@GamemodeChange}"
+						loop all players:
+							if loop-player has permission "{@CoreStaff}":
+								send "{@staffalert} {@GamemodeChangeSelf}" to loop-player
+					if arg-2 is set:
+						if arg-2 is online:
+							set arg-2's gamemode to adventure
+							send "{@prefix} {@GamemodeChange}" to arg-2
+							loop all players:
+								if loop-player has permission "{@CoreStaff}":
+									send "{@staffalert} {@GamemodeChangeOthers}" to loop-player
+						else:
+							send "{@prefix} {@PlayerNotFound}"
+				else:
+					send "{@prefix} {@NoPermission}"
+
+			if arg-1 is "sp" or "spectator":
+				if player has permission "{@GamemodeSpectator}":
+					if arg-2 is not set:
+						set the player's gamemode to spectator
+						send "{@prefix} {@GamemodeChange}"
+						loop all players:
+							if loop-player has permission "{@CoreStaff}":
+								send "{@staffalert} {@GamemodeChangeSelf}" to loop-player
+					if arg-2 is set:
+						if arg-2 is online:
+							set arg-2's gamemode to spectator
+							send "{@prefix} {@GamemodeChange}" to arg-2
+							loop all players:
+								if loop-player has permission "{@CoreStaff}":
+									send "{@staffalert} {@GamemodeChangeOthers}" to loop-player
+						else:
+							send "{@prefix} {@PlayerNotFound}"
+				else:
+					send "{@prefix} {@NoPermission}"
+			else:
+				if arg-1 is not "sp" or "spectator" or "s" or "survival" or "c" or "creative" or "a" or "adventure":
+					send "{@prefix} &bInvalid Gamemode: &c%arg-1%"		
+		else:
+			send "{@prefix} &cThis command can't be executed from console"			
+
+on command "/gmc":
+	# cancelling event to remove unknown command message
+	cancel event
+	make player execute command "/gm creative"
+on command "/gms":
+	# cancelling event to remove unknown command message
+	cancel event
+	make player execute command "/gm survival"	
+on command "/gma":
+	# cancelling event to remove unknown command message
+	cancel event
+	make player execute command "/gm adventure"	
+on command "/gmsp":
+	# cancelling event to remove unknown command message
+	cancel event
+	make player execute command "/gm spectator"	
+
+# Fly command
+
+command /fly [<player>]:
+	trigger:
+		if arg-1 is not set:
+			if player has permission "{@FlyPerm}":
+				if player's flight mode is false:
+					set player's flight mode to true
+					send "{@prefix} {@FlyEnabled}"
+					stop
+				else:
+					set player's flight mode to false
+					send "{@prefix} {@FlyDisabled}" 
+					stop
+			else:
+				send "{@prefix} {@NoPermission}"
+		if arg-1 is set:
+			if arg-1 is online:		
+				if player has permission "{@FlyOtherPerm}":
+					if arg-1's flight mode is false:
+						set arg-1's flight mode to true
+						send "{@prefix} {@FlyEnabled}" to arg-1
+						loop all players:
+							if loop-player has permission "{@CoreStaff}":
+								send "{@staffalert} {@FlyOtherEnabled}" to loop-player
+								stop
+					else:
+						set arg-1's flight mode to false
+						send "{@prefix} {@FlyDisabled}" to arg-1
+						loop all players:
+							if loop-player has permission "{@CoreStaff}":
+								send "{@staffalert} {@FlyOtherDisabled}" to loop-player
+								stop
+				else:
+					send "{@prefix} {@NoPermission}"							
+
+# Ping command 
+
+command /ping [<player>]:
+	trigger:
+		if arg 1 is not set:
+			send "{@prefix} &bYour ping is &3%player's ping%ms"
+		else:
+			send "{@prefix} &b%player-arg% 's ping is &3%player-arg's ping%ms"
+
+# Heal			
+
+command /heal [<player>]:
+	trigger:
+		if player-argument is not set:
+			if player has permission "{@HealPerm}":
+				set the health of player to 20
+				send "{@prefix} {@HealSelf}" to player
+				if {@HealAlert} is true:
+					loop all players:
+						if loop-player has permission "{@CoreStaff}":
+							send "{@staffalert} {@HealSelfAlert}" to loop-player
+							stop
+				if {@HealAlert} is false:
+					stop
+				else:
+					broadcast "{@prefix} &bHeal Alert mode &c{@HealAlert} &bis invalid"			
+			else:
+				send "{@prefix} {@NoPermission}"
+				stop
+
+		if player-argument is set:
+			if arg-1 is online:
+				if player has permission "{@HealOtherPerm}":
+					set the health of arg-1 to 20
+					send "{@prefix} &bYou have been healed &c❤" to arg-1
+					if {@HealAlert} is true:
+						loop all players:
+							if loop-player has permission "{@CoreStaff}":
+								send "{@staffalert} {@HealOtherAlert}" to loop-player
+								stop
+					if {@HealAlert} is false:
+						stop
+					else:
+						broadcast "{@prefix} &bHeal Alert mode &c{@HealAlert} &bis invalid"				
+				else:
+					send "{@prefix} {@NoPermission}"			
+			else:
+				send "{@prefix} &c%player% &bis not online!"
+
+command /feed [<player>]:
+	trigger:
+		if player-argument is not set:
+			if player has permission "{@FeedPerm}":
+				set food level of player to 10
+				send "{@prefix} {@FeedSelf}" to player
+				loop all players:
+					if loop-player has permission "{@CoreStaff}":
+						send "{@staffalert} {@FeedSelfAlert}" to loop-player
+			else:
+				send "{@prefix} {@NoPermission}"
+				stop
+
+		if player-argument is set:
+			if arg-1 is online:
+				if player has permission "{@FeedOtherPerm}":
+					set the health of arg-1 to 20
+					send "{@prefix} {@FeedSelf}" to arg-1
+					if {@FeedAlert} is true:
+						loop all players:
+							if loop-player has permission "{@CoreStaff}":
+								send "{@staffalert} {@FeedOtherAlert}" to loop-player
+								stop
+					if {@FeedAlert} is false:
+						stop
+					else:
+						broadcast "{@prefix} &bFeed Alert mode &c{@FeedAlert} &bis invalid"			
+				else:
+					send "{@prefix} {@NoPermission}"			
+			else:
+				send "{@prefix} &c%player% &bis not online!"				
+
+# Invsee
+
+command /invsee [<player>]:
+	aliases: inv, inventory
+	permission: {@InvSeePerm}
+	permission message: {@prefix} {@NoPermission}
+	trigger:
+		if arg-1 is not set:
+			send "{@prefix} &cUsage: /invsee <player>" to player
+		if arg-1 is set:
+			if arg-1 is online:
+				open the arg-1's inventory for the player
+				send "{@prefix} {@OpeningInv}" to player
+				if {@InvSeeAlert} is true:
+					loop all players:
+						if loop-player has permission "{@CoreStaff}":
+							send "{@staffalert} {@InvSeeAlertMessage}" to loop-player
+							stop	
+				if {@InvSeeAlert} is false:
+					stop
+				else:
+					broadcast "{@prefix} &bInvSee Alert mode &c{@InvSeeAlert} &bis invalid"			
+
+# Kill
+
+Command /kill <player>:
+	permission: {@KillPerm}
+	permission message: {@prefix} {@NoPermission}
+	aliases: end
+	trigger:
+		if arg-1 is not set:
+			send "{@prefix} &cMention player to kill!"
+		else if arg-1 is set:
+			if arg-1 is online:
+				kill arg-1
+				send "{@prefix} {@KillSuccess}"
+				if {@KillAlert} is true:
+					loop all players:
+						if loop-player has permission "{@CoreStaff}":
+							send "{@staffalert} {@KillAlertMessage}" to loop-player
+							stop
+				if {@KillAlert} is false:
+					stop
+				else:
+					broadcast "{@prefix} &bKill Alert mode &c{@KillAlert} &bis invalid"				
+			else if arg-1 is not online:
+				send "{@prefix} &c%arg-1% is not online"	
+
+
+command /enchant <enchantment type>:
+	permission: {@EnchantPerm}
+	permission message: {@prefix} {@NoPermission}
+	Usage: {@prefix} &b/enchant <enchantment> 
+	trigger:
+		enchant player's tool with arg-1
+		send "{@prefix} &bSuccessfully enchanted item with %arg-1%"
+		if {@EnchantAlert} is true:
+			loop all players:
+				if loop-player has permission "{@CoreStaff}":
+					send "{@staffalert} {@EnchantAlertMsg}" to loop-player
+					stop
+			broadcast "{@prefix} &bEnchant Alert mode &c{@EnchantAlert} &bis invalid!"
+
+command /tp [<player>]:
+	permission: {@TeleportPerm}
+	permission message: {@prefix} {@NoPermission}
+	trigger:
+		if arg-1 is set:
+			set {backlocation.%player%} to player's location
+			teleport player to player-arg
+			send "{@prefix} {@TpSuccess}"
+			if {@TpAlerts} is true:
+				loop all players:
+					if loop-player has permission "{@CoreStaff}":
+						send "{@prefix} {@TpAlert}" to loop-player
+		else:
+			send "{@prefix} &b/tp &3<player>"
+
+command /back [<player>]:
+	permission: {@BackPerm} 
+	permission message: {@prefix} {@NoPermission}
+	trigger:
+		if arg-1 is not set:
+			if {backlocation.%player%} is set:
+				teleport player to {backlocation.%player%}
+				send "&aSuccess"
+			else:
+				send "&cFailed"
+		else:
+			if {backlocation.%arg-1%} is set:
+				teleport player-arg to {backlocation.%arg-1%}
+				send "&aSuccess"
+			else:
+				send "&cNah"	
+
+command /tpall:
+	permission: skript.admin
+	permission message: {@prefix} {@NoPermission}
+	trigger:
+		if {tpall.confirm.%player%} is not set:
+			set {tpall.confirm.%player%} to false
+			send " "
+			send "&4⚠ &c&lARE YOU WANT TO TELEPORT ALL PLAYERS &4⚠"
+			send "           &c/back may not work as intended!"
+			send ""
+			send "                    &a&lYes     &c&lNo"
+			send "                  &7&otype in chat "
+			send " "
+		if {tpall.confirm.%player%} is true:
+			teleport all players to player
+			send "{@prefix} {@TpAllSuccess}" to player
+			if {@TpAlerts} is true:
+				loop all players:
+					if loop-player has permission "{@CoreStaff}":
+						send "{@prefix} {@TpAllAlert}" to loop-player
+			delete {tpall.confirm.%player%}				
+
+
+command /tphere [<player>]:
+	permission: {@TpherePerm}
+	permission message: {@prefix} {@NoPermission}
+	trigger:
+		if arg-1 is not set:
+			send "{@prefix} &b/tphere &3<player>" to player
+		else:
+			set {backlocation.%player%} to player-arg's location
+			teleport arg-1 to player
+			send "{@prefix} &bSuccessfully teleported &3%arg 1%" to player
+		stop
+		
+command /speed [<text>] [<number>]:
+	Permission: {@SpeedPerm}
+	permission message: {@prefix} {@NoPermission}
+	trigger:
+		if arg-1 is not set:
+			send "{@prefix} &b/speed &3<walk/fly> <value>" to player
+		if arg-1 is set:
+			if arg-1 is "fly":
+				if arg-2 is 1:
+					set the player's fly speed to 0.1
+					send "{@prefix} {@FlySpeed}"
+					stop
+				if arg-2 is 2:
+					set the player's fly speed to 0.2
+					send "{@prefix} {@FlySpeed}"
+					stop
+				if arg-2 is 3:
+					set the player's fly speed to 0.3
+					send "{@prefix} {@FlySpeed}"
+					stop
+				if arg-2 is 4:
+					set the player's fly speed to 0.4
+					send "{@prefix} {@FlySpeed}"
+					stop
+				if arg-2 is 5:
+					set the player's fly speed to 0.5
+					send "{@prefix} {@FlySpeed}"
+					stop
+				if arg-2 is 6:
+					set the player's fly speed to 0.6
+					send "{@prefix} {@FlySpeed}"
+					stop
+				if arg-2 is 7:
+					set the player's fly speed to 0.7
+					send "{@prefix} {@FlySpeed}"
+					stop
+				if arg-2 is 8:
+					set the player's fly speed to 0.8
+					send "{@prefix} {@FlySpeed}"
+					stop
+				if arg-2 is 9:
+					set the player's fly speed to 0.9
+					send "{@prefix} {@FlySpeed}"
+					stop
+				if arg-2 is 10:
+					set the player's fly speed to 1.0
+					send "{@prefix} {@FlySpeed}"
+					stop	
+			if arg-1 is "walk":
+				if arg-2 is 1:
+					set the player's walk speed to 0.1
+					send "{@prefix} {@WalkSpeed}"
+					stop
+				if arg-2 is 2:
+					set the player's walk speed to 0.2
+					send "{@prefix} {@WalkSpeed}"
+					stop
+				if arg-2 is 3:
+					set the player's walk speed to 0.3
+					send "{@prefix} {@WalkSpeed}"
+					stop
+				if arg-2 is 4:
+					set the player's walk speed to 0.4
+					send "{@prefix} {@WalkSpeed}"
+					stop
+				if arg-2 is 5:
+					set the player's walk speed to 0.5
+					send "{@prefix} {@WalkSpeed}"
+					stop
+				if arg-2 is 6:
+					set the player's walk speed to 0.6
+					send "{@prefix} {@WalkSpeed}"
+					stop
+				if arg-2 is 7:
+					set the player's walk speed to 0.7
+					send "{@prefix} {@WalkSpeed}"
+					stop
+				if arg-2 is 8:
+					set the player's walk speed to 0.8
+					send "{@prefix} {@WalkSpeed}"
+					stop
+				if arg-2 is 9:
+					set the player's walk speed to 0.9
+					send "{@prefix} {@WalkSpeed}"
+					stop
+				if arg-2 is 10:
+					set the player's walk speed to 1.0
+					send "{@prefix} {@WalkSpeed}"
+					stop
+				else:
+					set the player's walk speed to 1.0
+					send "{@prefix} {@WalkSpeed}"
+					stop						
+																							
+command /report [<player>] [<text>]:
+	aliases: /rep
+	cooldown: {@ReportCooldown} seconds
+	cooldown message: {@prefix} &bYou can only report every {@ReportCooldown} seconds!
+	trigger:
+		if arg-1 is set:
+			if arg-2 is set:
+				send "{@prefix} {@ReportReceived}"
+				add 1 to {report.count.%arg-1%}
+				if {@LogReports} is true:
+					add "&8|| &c%arg-1% &7was reported by &b%player% &9Reason: &7%arg-2% &8||&f" to {Reports::*}
+				loop all players:
+					if loop-player has permission "{@CoreStaff}":
+						send "{@ReportLine1}" to loop-player
+						send "     {@ReportLine2}" to loop-player	
+			else:
+				cancel the cooldown
+				send "{@prefix} &b/report &3<player> <reason>"
+				send "{@prefix} &bMention Reason for report"			
+		else:
+			cancel the cooldown
+			send "{@prefix} &b/report &3<player> <reason>"
+			send "{@prefix} &bMention Player to report"
+
+command /reports:
+	permission: {@CoreStaff}	
+	permission message: {@prefix} {@NoPermission}
+	trigger:
+		if {@LogReports} is true:
+			send "{@prefix} &3Reports:"
+			send "&b%{Reports::*}%"
+		else:
+			send "{@prefix} Report Logging feature is currently disabled in config :(" 	
+		
+
+#=============================================+(TROLL)+=============================================#
+
+
+command /fakeop <player>:
+	usage: /fakeop <Player>
+	permission: {@FakeOPPerm}
+	permission message: {@prefix} {@NoPermission}
+	trigger:
+		if executor is console:
+			send "&7&o[Server: Opped %arg-1%]" to arg player
+			loop all players:
+				if loop-player has permission "{@CoreAdmin}":
+					send "{@adminalert} {@ConsoleFakeOP}" to loop-player 
+		if executor is player:
+			send "&7&o[%player%: Opped %arg 1%]" to arg player
+			loop all players:
+				if loop-player has permission "{@CoreAdmin}":
+					send "{@adminalert} {@PlayerFakeOP}" to loop-player
+
+command /fakedeop <player>:
+	usage: /fakedeop <Player>
+	permission: {@FakeDeopPerm}
+	permission message: {@prefix} {@NoPermission}
+	trigger:
+		if executor is console:
+			send "&7&o[Server: Deopped %arg 1%]" to arg player
+			loop all players:
+				if loop-player has permission "{@CoreAdmin}":
+					send "" to loop-player
+					send "{@adminalert} {@ConsoleFakeDEOP}" to loop-player
+					send "" to loop-player
+		if executor is player:
+			send "&7&o[%player%: Deopped %arg 1%]" to arg player
+			loop all players:
+				if loop-player has permission "{@CoreAdmin}":
+					send "{@adminalert} {@PlayerFakeDEOP}" to loop-player
+command /timeout <player>:
+	permission: {@TimeOutPerm}
+	permission message: {@prefix} {@NoPermission}
+	trigger:
+		if arg-1 is not set:
+			send "{@prefix} &bTarget not sepcified"
+		else:
+			kick arg-1 due to "Timed out"
+			if {@TimeOutAlert} is true:
+				loop all players:
+					if loop-player has permission "{@CoreAdmin}":
+						send "{@adminalert} {@TimeOutAlertMessage}" to loop-player
+						stop
+			if {@TimeOutAlert} is false:
+				stop
+			else:
+				broadcast "{@prefix} &bTimeOut Alert mode &c{@TimeOutAlert} &bis invalid!"
+
+command /sudo <player> <text>:
+	Usage: {@prefix} &b/Sudo &3<player> <message>
+	permission: {@SudoPerm}
+	permission message: {@prefix} {@NoPermission}
+	trigger:
+		make arg-1 say arg-2
+		send "{@prefix} {@SudoSuccess}"
+		if {@SudoAlert} is true:
+			loop all players:
+				if loop-player has permission "{@CoreAdmin}":
+					send "{@adminalert} &3%player% &bSudo'ed &e%arg-1%" to loop-player
+					stop
+		if {@SudoAlert} is false:
+			stop
+		else:
+			broadcast "{@prefix} {@SudoAlertMessage}"
+command /f:
+	permission: {@CoreAdmin}
+	permission message: {@prefix} {@NoPermission}
+	trigger:
+		loop all players:
+			make loop-player say "f"
+
+
+			
+				
+#=============================================+(STAFF)+=============================================#
+
+command /staffchat [<text>]:
+	aliases: /sc , /schat
+	trigger:
+		if arg-1 is not set:	
+			if player has permission "core.staffchat.use":
+				if {staffchat.status.%player%} is not set:
+					set {staffchat.status.%player%} to true
+					stop
+				if {staffchat.status.%player%} is false:
+					set {staffchat.status.%player%} to true
+					send "{@prefix} &bStaff Chat Toggled &aOn&b."
+					stop
+				if {staffchat.status.%player%} is true:
+					set {staffchat.status.%player%} to false
+					send "{@prefix} &bStaff Chat Toggled &cOff&b."
+					stop
+			else:
+				send "{@prefix} {@NoPermission}"
+		else:
+			loop all players:
+				if loop-player has permission "core.staffchat.see":
+					send "{@StaffChatPrefix} {@StaffChatFormat}: {@StaffChatMessageColour}%arg-1%" to loop-player
+					
+
+command /freeze [<player>]:
+	permission: {@FreezePerm}
+	permission message: {@prefix} {@NoPermission}
+	trigger:
+		if arg-1 is not set:
+			send "{@ChatBar}"
+			send "                     &b&lFreeze Manager"
+			send ""
+			send "&b/freeze &3<player> &8- &7Regular Freeze"
+			send "&7/guifreeze &3<player> <reason>&8- &7Opens GUI to Admit"
+			send ""
+			if {@BanOnQuitWhilstFrozen} is true:
+				send "&bAutoban on Quit: &aEnabled &7&o(config)"
+			else:
+				send "&bAutoban on Quit: &cDisabled &7&o(config)"	
+			send "{@ChatBar}"
+		if arg-1 is set:
+			if arg-1 is online:
+				if {freeze.status.%arg-1%} is false:
+					set {freeze.status.%arg-1%} to true
+					send "{@prefix} {@FreezeSuccess}"
+					set {freezelocation.%arg-1%} to player-arg's location
+					send "{@FrozenLine1}" to arg-1
+					send "{@FrozenLine2}" to arg-1
+					send "{@FrozenLine3}" to arg-1
+					send "{@FrozenLine4}" to arg-1
+					send "{@FrozenLine5}" to arg-1
+					send "{@FrozenLine6}" to arg-1
+					send "{@FrozenLine7}" to arg-1
+					send "{@FrozenLine8}" to arg-1
+					loop 9999 times:
+						wait 5 seconds
+						if {freeze.status.%arg-1%} is true:
+							send "{@FrozenLine1}" to arg-1
+							send "{@FrozenLine2}" to arg-1
+							send "{@FrozenLine3}" to arg-1
+							send "{@FrozenLine4}" to arg-1
+							send "{@FrozenLine5}" to arg-1
+							send "{@FrozenLine6}" to arg-1
+							send "{@FrozenLine7}" to arg-1
+							send "{@FrozenLine8}" to arg-1
+
+				if {freeze.status.%arg-1%} is true:
+					set {freeze.status.%arg-1%} to false
+					send "{@prefix} {@UnfreezeAlert}"
+					send "{@prefix} {@NoLongerFrozen}" to arg-1
+
+				else:
+					if {freeze.status.%arg-1%} is not set:
+						set {freeze.status.%arg-1%} to true
+						set {freezelocation.%arg-1%} to player-arg's location
+						send "{@prefix} {@FreezeSuccess}"
+						send "{@FrozenLine1}" to arg-1
+						send "{@FrozenLine2}" to arg-1
+						send "{@FrozenLine3}" to arg-1
+						send "{@FrozenLine4}" to arg-1
+						send "{@FrozenLine5}" to arg-1
+						send "{@FrozenLine6}" to arg-1
+						send "{@FrozenLine7}" to arg-1
+						send "{@FrozenLine8}" to arg-1
+						loop 9999 times:
+							wait 5 seconds
+							if {freeze.status.%arg-1%} is true:
+								send "{@FrozenLine1}" to arg-1
+								send "{@FrozenLine2}" to arg-1
+								send "{@FrozenLine3}" to arg-1
+								send "{@FrozenLine4}" to arg-1
+								send "{@FrozenLine5}" to arg-1
+								send "{@FrozenLine6}" to arg-1
+								send "{@FrozenLine7}" to arg-1
+								send "{@FrozenLine8}" to arg-1
+
+
+on command "/guifreeze":
+	cancel event
+	send "{@prefix} &bMaybe in the future?"
+
+
+command /vanish [<text>]:
+	aliases: /v , /byemom
+	permission: {@VanishPerm}
+	permission message: {@prefix} {@NoPermission}
+	trigger:
+		if arg-1 is not set:
+			if {vanish.status.%player%} is not set:
+				if {modmode.status.%player%} is true:
+					set slot 8 of player to lime dye named "&bVanish: &aenabled"
+				set {vanish.status.%player%} to true
+				hide the player from all players
+				send "{@prefix} {@VanishEnabled}"
+				stop
+			if {vanish.status.%player%} is false:
+				if {modmode.status.%player%} is true:
+					set slot 8 of player to lime dye named "&bVanish: &aenabled"
+				hide the player from all players
+				set {vanish.status.%player%} to true
+				send "{@prefix} {@VanishEnabled}"
+				stop
+			else:
+				if {modmode.status.%player%} is true:
+					set slot 8 of player to gray dye named "&bVanish: &7disabled"
+				set {vanish.status.%player%} to false
+				reveal the player from all players
+				send "{@prefix} {@VanishDisabled}"
+				stop
+		if arg-1 is set:
+			if arg-1 is "on" or "enable":
+				if {modmode.status.%player%} is true:
+					set slot 8 of player to lime dye named "&bVanish: &aenabled"
+				set {vanish.status.%player%} to true
+				hide the player from all players
+				send "{@prefix} {@VanishEnabled}"
+				stop
+			if arg-1 is "off" or "disable":
+				if {modmode.status.%player%} is true:
+					set slot 8 of player to lime dye named "&bVanish: &7disabled"
+				set {vanish.status.%player%} to false
+				reveal the player from all players
+				send "{@prefix} {@VanishDisabled}"
+				stop
+						
+command /mod:
+	aliases: /modemode , /staffmode , /smode 
+	permission: {@ModModePerm}
+	permission message: {@prefix} {@NoPermission}
+	trigger:
+		if {modmode.status.%player%} is not set:
+			set {modmode.status.%player%} to true
+			if player's flight mode is false:
+				set player's flight mode to true
+			set gamemode of player to creative
+			set {_count} to 0
+			loop 36 times:
+				set {inv.%player%.%{_count}%} to slot {_count} of player's inventory
+				add 1 to {_count}
+			set {inv.%player%.helmet} to player's helmet
+			set {inv.%player%.chest} to player's chestplate
+			set {inv.%player%.legs} to player's leggings
+			set {inv.%player%.feet} to player's boots
+			clear player's inventory
+			wait 1 tick
+			set slot 0 of player to compass named "&bPhase"
+			set slot 1 of player to paper named "&bPlayer Info"
+			set slot 2 of player to book named "&bInspect Inventory"
+			set slot 6 of player to Ice named "&b&lFreeze Player"
+			set slot 7 of player to player head named "&bOnline Staff"
+			if {vanish.status.%player%} is true:
+				set slot 8 of player to lime dye named "&bVanish: &aenabled"
+			else:
+				set slot 8 of player to gray dye named "&bVanish: &7disabled"
+			loop all players:
+				if loop-player has permission "{@ModModePerm}":
+					send "{@staffalert} {@ModeModeEnabledAlert}" to loop-player
+			stop
+
+		if {modmode.status.%player%} is false:
+			set {modmode.status.%player%} to true
+			if player's flight mode is false:
+				set player's flight mode to true
+			set gamemode of player to creative
+			set {_count} to 0
+			loop 36 times:
+				set {inv.%player%.%{_count}%} to slot {_count} of player's inventory
+				add 1 to {_count}
+			set {inv.%player%.helmet} to player's helmet
+			set {inv.%player%.chest} to player's chestplate
+			set {inv.%player%.legs} to player's leggings
+			set {inv.%player%.feet} to player's boots
+			clear player's inventory
+			wait 1 tick
+			set slot 0 of player to compass named "&bPhase"
+			set slot 1 of player to paper named "&bPlayer Info"
+			set slot 2 of player to book named "&bInspect Inventory"
+			set slot 6 of player to Ice named "&b&lFreeze Player"
+			set slot 7 of player to player head named "&bOnline Staff"
+			if {vanish.status.%player%} is true:
+				set slot 8 of player to lime dye named "&bVanish: &aenabled"
+			else:
+				set slot 8 of player to gray dye named "&bVanish: &7disabled"
+			loop all players:
+				if loop-player has permission "{@ModModePerm}":
+					send "{@staffalert} {@ModeModeEnabledAlert}" to loop-player
+			stop
+
+		if {modmode.status.%player%} is true:
+			set {modmode.status.%player%} to false
+			set the player's gamemode to survival
+			set player's flight mode to false
+			clear player's inventory
+			set {_count} to 0
+			loop 36 times:
+				set slot {_count} of player's inventory to {inv.%player%.%{_count}%}
+				add 1 to {_count}
+			set the helmet of player to {inv.%player%.helmet}
+			set the chestplate of player to {inv.%player%.chest}
+			set the leggings of player to {inv.%player%.legs}
+			set the boots of player to {inv.%player%.feet}
+			loop all players:
+				if loop-player has permission "{@ModModePerm}":
+					send "{@prefix}	{@ModeModeDisabledAlert}"
+			stop
+
+
+#=============================================+(SERVER)+=============================================#
+
+command /chat [<text>] [<text>]:
+	permission: {@ChatManager}
+	permission message: {@prefix} {@NoPermission}
+	trigger:
+		if arg-1 is not set:
+			send "{@ChatBar}"
+			send "                     &b&lChat Manager"
+			send ""
+			send "&b/chat mute &8- &7Mute Chat"
+			send "&b/chat clear &3<global / personal / silent>"
+			send "&7/chat slowmode &8- &7Slow Chat"
+			send "{@ChatBar}"
+		if arg-1 is set:
+			if arg-1 is "mute":
+				if {chat.mute.status} is true:
+					set {chat.mute.status} to false
+					broadcast "{@prefix} &bGlobal Chat &7has been &aenabled &7by &3%player%"
+					stop
+				if {chat.mute.status} is false:
+					set {chat.mute.status} to true
+					broadcast "{@prefix} &bGlobal &7Chat has been &cdisabled &7by &3%player%"
+					stop	
+				if {chat.mute.status} is not set:
+					set {chat.mute.status} to true
+					broadcast "{@prefix} &bGlobal Chat &7has been &cdisabled &7by &3%player%"
+					stop	
+			if arg-1 is "slowmode":
+				send "&8(&bDeveloper&8) &boShifuu&8: &bMaybe in a Future Update!"	
+				stop
+			if arg-1 is "clear":
+				if arg-2 is set:
+					if arg-2 is "global":
+						loop 300 times:
+							loop all players:
+								send " "
+						broadcast "{@prefix} &bChat has been cleared by &3%player%" 
+						stop		
+					if arg-2 is "personal":
+						loop 300 times:
+							send " " to player
+						send "{@prefix} &bYour chat has been cleared"
+						stop
+					if arg-2 is "silent":
+						loop 300 times:
+							loop all players:
+								send " "
+						send ""		
+						send "{@prefix} &bYou have silently cleared chat!"
+						send ""		
+						stop
+					else:
+						send "{@prefix} &bInvalid mode: &c%arg-2%"
+				else:
+					loop 300 times:
+						loop all players:
+							send " "
+					send "{@prefix} &bClear mode not mentioned, used default mode"
+					broadcast "{@prefix} &bChat has been cleared by &3%player%"
+			else:
+				send "{@prefix} &bUnknown chat manager command: &c%arg-1%"		
+
+														
+							
+
+command /reboot <text>:
+	permission: {@RebootPerm}
+	permission message: {@prefix} {@NoPermission}
+	Usage: {@prefix} &bUsage&8: &b/reboot &b(&3start&b/&3cancel&b)
+	trigger:
+		if arg-1 is "start":
+			set {reboot.status} to true
+			broadcast ""
+			broadcast "{@rebootline1}"
+			broadcast ""
+			wait 15 seconds
+			if {reboot.status} is true:
+				broadcast ""
+				broadcast "{@rebootline2}"
+				broadcast ""
+				wait 5 seconds
+				if {reboot.status} is true:
+					broadcast ""
+					broadcast "{@rebootline3}"
+					broadcast ""
+					wait 5 seconds
+					if {reboot.status} is true:
+						make server execute command "/save-all"
+						broadcast ""
+						broadcast "{@rebootline4}"
+						broadcast ""
+						wait 4 seconds
+						if {reboot.status} is true:
+							loop all players:
+								kick loop-player due to "{@rebootKick}"
+							wait 2 second
+							if {reboot.status} is true:
+								make server execute command "/save-all"
+								wait a second
+								if {reboot.status} is true:
+									make server execute command "/stop"
+		else if arg-1 is "cancel":
+			set {reboot.status} to false
+			send "{@prefix} &aYou have cancelled server reboot!"
+			broadcast "{@ChatBar}"
+			broadcast "{@rebootCancel}"	
+			broadcast "{@ChatBar}"										
+								
+
+command /maintenance [<text>] [<player>]:
+	aliases: /maint
+	permission: {@MaintenancePerm}
+	permission message: {@prefix} {@NoPermission}
+	trigger:
+		if executor is console:
+			if arg-1 is not set:
+				send "{@ChatBar}"
+				send "                     &b&lMaintenance Help"
+				send ""
+				send "&b/maintenance &3enable &7- Enables Maintenance"
+				send "&b/maintenance &3disable &7- Disables Maintenance"
+				send "&b/maintenance &3bypass <player> &8- &7add player to whitelist"
+				send ""
+				send "{@ChatBar}"
+			if arg-1 is "enable":
+				set {maintenance.status} to true
+				if {@MaintenanceAlerts} is true:
+					loop all players:
+						if loop-player has permission "{@CoreStaff}":
+							send "{@MaintenanceEnabled}" to loop-player
+			if arg-1 is "disable":
+				set {maintenance.status} to false
+				send "{@MaintenanceDisabled}"
+			if arg-1 is "bypass":
+				if arg-2 is set:
+					if {maintenance.bypass.%arg-2%} is not set:
+						set {maintenance.bypass.%arg-2%} to false
+						stop
+					if {maintenance.bypass.%arg-2%} is false:
+						set {maintenance.bypass.%arg-2%} to true
+						loop all players:
+							if loop-player has permission "{@CoreStaff}":
+								send "{@MaintenanceBypassAdd}" to loop-player
+						stop
+					if {maintenance.bypass.%arg-2%} is true:
+						set {maintenance.bypass.%arg-2%} to false
+						loop all players:
+							if loop-player has permission "{@CoreStaff}":
+								send "{@MaintenanceBypassRemove}" to loop-player	
+						stop	
+				
+		if executor is player:
+			if arg-1 is not set:
+				send "{@ChatBar}"
+				send "                     &b&lMaintenance Help"
+				send ""
+				send "&b/maintenance &3enable &8- &7Enables Maintenance"
+				send "&b/maintenance &3disable &8- &7Disables Maintenance"
+				send "&b/maintenance &3gui &8- &7Check status & control"
+				send "&b/maintenance &3bypass <player> &8- &7add player to whitelist"
+				send ""
+				send "{@ChatBar}"
+			if arg-1 is "gui":			
+				set {_maintenancegui} to a new chest inventory with 3 row with name "&bMaintenance Menu"
+				set slot 11 of {_maintenancegui} to redstone named "&cDisable Maintenance ✗" with lore "&7&oClick to disable Maintenance"
+				set slot 13 of {_maintenancegui} to paper named "&3❄ &b&lMaintenance &3❄" with lore "&bStatus: &3%{maintenance.status}%"
+				set slot 15 of {_maintenancegui} to lime dye named "&aEnable Maintenance ✓" with lore "&7&oClick to enable Maintenance"
+				open {_maintenancegui} to player
+			if arg-1 is "enable":
+				set {maintenance.status} to true
+				if {@MaintenanceAlerts} is true:
+					loop all players:
+						if loop-player has permission "{@CoreStaff}":
+							send "{@MaintenanceEnabled}" to loop-player
+			if arg-1 is "disable":
+				set {maintenance.status} to false
+				send "{@MaintenanceDisabled}"
+			if arg-1 is "bypass":
+				if arg-2 is set:
+					if {maintenance.bypass.%arg-2%} is not set:
+						set {maintenance.bypass.%arg-2%} to true
+						send "{@MaintenanceBypassAdd}"
+						stop
+					if {maintenance.bypass.%arg-2%} is false:
+						set {maintenance.bypass.%arg-2%} to true
+						send "{@MaintenanceBypassAdd}"
+						stop
+					if {maintenance.bypass.%arg-2%} is true:
+						set {maintenance.bypass.%arg-2%} to false
+						send "{@MaintenanceBypassRemove}"	
+						stop
+				else:
+					send "{@prefix} {@PlayerNotFound}"
+			else:
+				if arg-1 is not "enable" or "disable" or "bypass" or "gui":
+					send "{@prefix} &bInvalid Argument: &c%arg-1%"				
+		
+
+#=============================================+(RANK)+=============================================#
+
+command /rank [<text>] [<text>] [<text>] [<text>]:
+	permission: {@CoreAdmin}
+	permission message: {@prefix} {@NoPermission}
+	trigger:
+		if "{@RankPlugin}" is "LUCKPERMS" or "luckperms" or "lp":
+			if arg-1 is not set:
+				send "{@ChatBar}"
+				send " &b&lRanks Help &7- &3Page &7[&b1/2&7]"
+				send ""
+				send "&b/rank grant <player> <name> &8- &7grant player rank"
+				send "&b/rank remove <player> <name> &8- &7revoke player rank"
+				send "&b/rank help <page> &8- &7Show Available Commands"
+				send "&b/rank create <name> &8- &7create rank"
+				send "&b/rank delete <name> &8- &7delete rank"
+				send "&b/rank setprefix <name> <prefix> &8- &7set rank's prefix"
+				send "&b/rank setsuffix <name> <suffix> &8- &7set rank's suffix"
+				send "&b/rank addperm <name> <node> &8- &7add permission node"
+				send "&b/rank delperm <name> <node> &8- &7delete permission node"
+				send "&b/rank list &8- &7see available ranks"
+				send "&b/rank listperms <name> <page>&8- &7list rank permissions"
+				send "&b/rank setweight <name> <weight> &8- &7Set Rank's weight!"
+				send "{@ChatBar}"
+	
+			if arg-1 is set:
+				if arg-1 is "help":
+					if arg-2 is set:
+						if arg-2 is "1":
+							make player execute command "/rank"
+						if arg-2 is "2":
+							send "{@ChatBar}"
+							send " &b&lRanks Help &7- &3Page &7[&b2/2&7]"
+							send ""
+							send "&b/rank clearperms <name> &8- &7clear rank's permissions"
+							send "&b/rank recentlogs <player> <page> &8- &7Actions done by player"
+							send "&b/rank userhistory <player> <page> &8- &7History of User"
+							send "&b/rank rankhistory <rank> <page> &8- &7History of Group"
+							send "{@ChatBar}"
+					else:
+						make player execute command "/rank"		
+
+				if arg-1 is "create":
+					if arg-2 is set:
+						make player execute command "/lp creategroup %arg-2%"
+						if {@RankManagerAlerts} is true:
+							loop all players:
+								if loop-player has permission "{@CoreStaff}":
+									send "{@prefix} {@RankCreated}" to loop-player
+
+					else:
+						send "{@prefix} &bMention Rank Name!"
+				if arg-1 is "delete":
+					if arg-2 is set:
+						make player execute command "/lp deletegroup %arg-2%"
+						if {@RankManagerAlerts} is true:
+							loop all players:
+								if loop-player has permission "{@CoreStaff}":
+									send "{@prefix} {@RankDeleted}" to loop-player
+					else:
+						send "{@prefix} &bMention Rank Name!"
+				if arg-1 is "setprefix":
+					if arg-2 is set:
+						if arg-3 is set:
+							make player execute command "/lp group %arg-2% meta setprefix %arg-3%"
+							if {@RankManagerAlerts} is true:
+								loop all players:
+									if loop-player has permission "{@CoreStaff}":
+										send "{@prefix} {@RankSetPrefix}" to loop-player
+						else:
+							send "{@prefix} &bPrefix not mentioned!"
+					else:
+						send "{@prefix} &bMention Rank Name!"
+				if arg-1 is "setsuffix":
+					if arg-2 is set:
+						if arg-3 is set:
+							make player execute command "/lp group %arg-2% meta setsuffix %arg-3%"
+							if {@RankManagerAlerts} is true:
+								loop all players:
+									if loop-player has permission "{@CoreStaff}":
+										send "{@prefix} {@RankSetSuffix}" to loop-player
+						else:
+							send "{@prefix} &bPrefix not mentioned!"
+					else:
+						send "{@prefix} &bMention Rank Name!"
+				if arg-1 is "list":
+					make player execute command "/lp listgroups"
+				if arg-1 is "rename":
+					if arg-2 is set:
+						if arg-3 is set:
+							make player execute command "/lp group %arg-2% setdisplayname %arg-3%"
+							if {@RankManagerAlerts} is true:
+								loop all players:
+									if loop-player has permission "{@CoreStaff}":
+										send "{@prefix} {@RankRename}" to loop-player
+						else:
+							send "{@prefix} &bMention new name!"
+					else:
+						send "{@prefix} &bMention Rank Name!"
+				if arg-1 is "addperm":
+					if arg-2 is set:
+						if arg-3 is set:
+							make player execute command "/lp group %arg-2% permission set %arg-3% true"	
+						else:
+							send "{@prefix} &bPermission node missing"
+					else:
+						send "{@prefix} &bMention rank name!"
+				if arg-1 is "delperm":
+					if arg-2 is set:
+						if arg-3 is set:
+							make player execute command "/lp group %arg-2% permission unset %arg-3%"	
+						else:
+							send "{@prefix} &bPermission node missing"
+					else:
+						send "{@prefix} &bMention rank name!"
+				if arg-1 is "listperms":
+					if arg-2 is set:
+						if arg-3 is not set:
+							make player execute command "/lp group %arg-2% permission info"
+						if arg-3 is set:
+							make player execute command "/lp group %arg-2% permission info %arg-3%"
+				if arg-1 is "recentlogs":
+					if arg-2 is set:
+						if arg-3 is set:
+							make player execute command "/lp log recent %arg-2% %arg-3%"		
+						else:
+							send "{@prefix} &bMention Page Number!"		
+					else:
+						send "{@prefix} &bMention Player name!"
+				if arg-1 is "userhistory":
+					if arg-2 is set:
+						if arg-3 is set:
+							make player execute command "/lp log userhistory %arg-2% %arg-3%"
+						else:
+							send "{@prefix} &bMention Page number!"
+					else:
+						send "{@prefix} &bMention rank name!"			
+				if arg-1 is "rankhistory":
+					if arg-2 is set:
+						if arg-3 is set:
+							make player execute command "/lp log grouphistory %arg-2% %arg-3%"
+						else:
+							send "{@prefix} &bMention Page number!"
+					else:
+						send "{@prefix} &bMention rank name!"	
+				if arg-1 is "grant":
+					if arg-2 is set:
+						if arg-3 is set:
+							make player execute command "/lp user %arg-2% group add %arg-3%"
+							loop all players:
+								if loop-player has permission "{@CoreStaff}":
+									send "{@prefix} {@LP-GrantMessage}" to loop-player
+						else:
+							send "{@prefix} &bMention rank to grant!"	
+					else:
+						send "{@prefix} &bMention User to grant rank to!"
+				if arg-1 is "remove":
+					if arg-2 is set:
+						if arg-3 is set:
+							make player execute command "/lp user %arg-2% group remove %arg-3%"
+						else:	
+							send "{@prefix} &bSpecify rank to remove"
+					else:
+						send "{@prefix} &bSpecify User to remove rank from"													
+				if arg-1 is "clearperms":
+					if arg-2 is set:
+						make player execute command "/lp group %arg-2% permission clear"	
+					else:
+						send "{@prefix} &bMention rank name!"	
+				if arg-1 is "setweight":
+					if arg-2 is set:
+						if arg-3 is set:
+							make player execute command "/lp group %arg-2% setweight %arg-3%"
+						else:
+							send "{@prefix} &bMention new weight!"
+					else:
+						send "{@prefix} &bMention rank name!"											 		 													
+				else:
+					if arg-1 is not "setweight" or "grant" or "clearperms" or "help" or "create" or "delete" or "rankhistory" or "userhistory" or "setprefix" or "recentlogs" or "delperm" or "listperms" or "setsuffix" or "list" or "rename" or "addperm":
+						send "{@prefix} &bInvalid Argument : &c%arg-1%"																
+		if "{@RankPlugin}" is "PermissionsEX" or "PEX" or "pex":
+			if arg-1 is not set:
+				send "{@ChatBar}"
+				send " &b&lRanks Help &7- &3Page &7[&b1/2&7]"
+				send ""
+				send "&b/rank create <rank> &8- &7create rank"
+				send "&b/rank delete <rank> &8- &7delete rank"
+				send "&b/rank set <player> <rank> &8- &7set player rank"
+				send "&b/rank add <player> <rank> &8- &7give player a rank"
+				send "&b/rank remove <player> <rank> &8- &7revoke player a rank"
+				send "&b/rank setprefix <rank> <prefix> &8- &7set rank's prefix"
+				send "&b/rank setsuffix <rank> <suffix> &8- &7set rank's suffix"
+				send "&b/rank permission add/remove <rank> <node> &8- &7modify permission node"
+				send "&b/rank list &8- &7see available ranks"
+				send "&b/rank weight set/get <rank> [<weight>] &8- &7Set or get Rank's weight!"
+				send "&b/rank parent add/remove <rank> <parent> &8- &7Modify rank parents"
+				send ""
+				send " &c&oIf commands don't work, run /pex user <your name> add * through console and then it should work"
+				send "{@ChatBar}"
+			if arg-1 is set:
+				if arg-1 is "set":
+					if arg-2 is set:
+						if arg-3 is set:
+							make player execute command "/pex user %arg-2% group set %arg-3%"
+							loop all players:
+								if loop-player has permission "{@CoreStaff}":
+									send "{@prefix} {@PEX-GrantMessage}" to loop-player	
+						else:
+							send "{@prefix} &bMention rank to set!"
+					else:
+						send "{@prefix} &bMention player!"
+				if arg-1 is "add":
+					if arg-2 is set:
+						if arg-3 is set:
+							make player execute command "/pex user %arg-2% group add %arg-3%"
+							loop all players:
+								if loop-player has permission "{@CoreStaff}":
+									send "{@prefix} {@PEX-GrantMessage}" to loop-player	
+						else:
+							send "{@prefix} &bMention rank to add!"
+					else:
+						send "{@prefix} &bMention player!"	
+				if arg-1 is "remove":
+					if arg-2 is set:
+						if arg-3 is set:
+							make player execute command "/pex user %arg-2% group remove %arg-3%"
+						else:
+							send "{@prefix} &bMention rank to be removed"
+					else:
+						send "{@prefix} &bMention player to be demoted"					
+				if arg-1 is "create":
+					if arg-2 is set:
+						make player execute command "/pex group %arg-2% create"
+						if {@RankManagerAlerts} is true:
+							loop all players:
+								if loop-player has permission "{@CoreStaff}":
+									send "{@prefix} {@RankCreated}" to loop-player
+					else:
+						send "{@prefix} &bMention Rank Name!"
+				if arg-1 is "delete":
+					if arg-2 is set:
+						make player execute command "/pex group %arg-2% delete"
+						if {@RankManagerAlerts} is true:
+							loop all players:
+								if loop-player has permission "{@CoreStaff}":
+									send "{@prefix} {@RankDeleted}" to loop-player
+					else:
+						send "{@prefix} &bMention Rank Name!"
+				if arg-1 is "setprefix":
+					if arg-2 is set:
+						if arg-3 is set:
+							make player execute command "/pex group %arg-2% prefix %arg-3%"
+							if {@RankManagerAlerts} is true:
+								loop all players:
+									if loop-player has permission "{@CoreStaff}":
+										send "{@prefix} {@RankSetPrefix}" to loop-player
+						else:
+							send "{@prefix} &bPrefix not mentioned!"
+					else:
+						send "{@prefix} &bMention Rank Name!"
+				if arg-1 is "setsuffix":
+					if arg-2 is set:
+						if arg-3 is set:
+							make player execute command "/pex group %arg-2% suffix %arg-3%"
+							if {@RankManagerAlerts} is true:
+								loop all players:
+									if loop-player has permission "{@CoreStaff}":
+										send "{@prefix} {@RankSetSuffix}" to loop-player
+						else:
+							send "{@prefix} &bPrefix not mentioned!"
+					else:
+						send "{@prefix} &bMention Rank Name!"
+				if arg-1 is "list":
+					make player execute command "/pex groups"
+				if arg-1 is "perm" or "permission":
+					if arg-2 is set:
+						if arg-2 is "add":
+							if arg-3 is set:
+								if arg-4 is set:
+									make player execute command "/pex group %arg-3% add %arg-4%"		
+								else:
+									send "{@prefix} &bMention new weight!"
+							else:
+								send "{@prefix} &bMention rank name!"
+						if arg-2 is "remove":
+							if arg-3 is set:
+								if arg-4 is set:
+									make player execute command "/lp group %arg-3% remove %arg-4%"	
+								else:
+									send "{@prefix} &bSpecify permission to add"
+							else:
+								send "{@prefix} &bInvalid rank"
+
+				if arg-1 is "listperms":
+					if arg-2 is set:
+						if arg-3 is not set:
+							make player execute command "/pex group %arg-2% list"	
+				if arg-1 is "weight":
+					if arg-2 is set:
+						if arg-2 is "set":
+							if arg-3 is set:
+								if arg-4 is set:
+									make player execute command "/pex group %arg-3% weight %arg-4%"		
+								else:
+									send "{@prefix} &bMention new weight!"
+							else:
+								send "{@prefix} &bMention rank name!"
+						if arg-2 is "get":
+							if arg-3 is set:
+								make player execute command "/pex group %arg-3% weight"
+						else:
+							send "{@prefix} &cUsage: /rank weight set/get <rank> [<weight>]"
+					else:
+						send "{@prefix} &cUsage: /rank weight set/get <rank> [<weight>]"	
+				if arg-1 is "parent":
+					if arg-2 is set:
+						if arg-2 is "add":
+							if arg-3 is set:
+								if arg-4 is set:
+									make player execute command "/pex group %arg-3% parents add %arg-4%"		
+								else:
+									send "{@prefix} &bMention parent!"
+							else:
+								send "{@prefix} &bMention rank name!"
+						if arg-2 is "remove":
+							if arg-3 is set:
+								make player execute command "/pex group %arg-3% parents remove %arg-4%"
+							else:
+								send "{@prefix} &bMention rank name"
+						else:
+							send "{@prefix} &bInvalid args"					
+		else:	
+			if "{@RankPlugin}" is not "PEX" or "pex" or "luckperms" or "LUCKPERMS":
+				broadcast "{@prefix} &bRank Plugin &c{@RankPlugin} &b is not Supported"
+				broadcast "{@prefix} &3Supported Plugins: &aLUCKPERMS , PEX"
+			
+
+
+
+
+
+
